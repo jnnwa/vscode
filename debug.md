@@ -27,9 +27,12 @@ For GDB, add `"setupCommands" : []`
 
 For LLDB, add `"postRunCOmmands" : []`
 
+handle SIGUSR1 nostop noprint
+handle SIGSEGV nostop noprint
+
 <h1>Live Debugging</h1>
 
-Note: The live debugger will only allow you to step through functions and watch variables that are included in the debug symbols of your executable (compile with `-g`). This means you **cannot** see infrastructure code or variables that are not visible in a header file.
+Note: The live debugger will only allow you to step through functions and watch variables that are included in the debug symbols of your executable (compile with `-g`). This means you **cannot** see internal infrastructure code or variables.
 
 In the debug menu, select a configuration from the drop down and press play to begin running your program. The debugger will pause when it hits a breakpoint or encounters an error.
 
