@@ -69,5 +69,5 @@ The integrated terminal in vscode is automatically launched within your working 
 If you are connecting to CAEN with remote SSH, you  will have to DUO auth every time you change folders as the server tries to make a new connection. You can fix this by changing the following settings:
 
 1. Navigate to <kbd>Code</kbd> > <kbd>Preferences</kbd> > <kbd>Settings</kbd>
-2. Search for @ext:ms-vscode-remote.remote-ssh. 
+2. Search for `@ext:ms-vscode-remote.remote-ssh`. 
 3. Enable "Enable Agent Forwarding", "Enable Dynamic Forwarding", "Local Server Download=auto", and "Use Local Server"
