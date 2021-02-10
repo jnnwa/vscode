@@ -25,7 +25,7 @@ If you are not using one of the in/out/err redirection fields, leave it as `null
 
 <h3>CAEN/WSL</h3>
 
-Add the standard linux redirection '</>' to the `"args"` field of your configuration. Example:
+Add the standard redirection '</>' format to the `"args"` field of your configuration. Example:
 
 `"args" : ["arg1", "arg2", "<input.in", ">output.out"]`
 
