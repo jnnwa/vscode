@@ -25,15 +25,19 @@ If you are not using one of the in/out/err redirection fields, leave it as `null
 
 <h3>CAEN/WSL</h3>
 
+Add the standard linux redirection '</>' to the `"args"` field of your configuration. Example:
+
+`"args" : ["arg1", "arg2", "<input.in", ">output.out"]`
+
 <h2>Apple Silicon</h2>
 
 TODO
 
 <h1>Infrastructure Signal Masking</h1>
 
-The Project infrastructures use OS signals that you may need to mask in order to prevent unwanted pauses while stepping. Example:
+The Project infrastructures use system signals that you may need to mask in order to prevent unwanted pauses while stepping. Example:
 
-For GDB, add `"setupCommands" : ["handle SIGUSR1 nostop noprint"]`
+For GDB, add `"setupCommands" : [{"text":"handle SIGUSR1 nostop noprint"}]`
 
 For LLDB, add `"postRunCommands" : ["process handle SIGUSR1 -n true -p true -s false"]`
 
