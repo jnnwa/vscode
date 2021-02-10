@@ -1,6 +1,6 @@
 <h1>VSCode For EECS 482</h1>
+VSCode is not your only option to develop code effectively in this class. Learning native linux text editors (like vim) is a very valuable skill that can allow you to pretty much code anytime anywhere, but the learning curve can be intimidating for students used to traditional GUI based IDEs. For projects 2, 3 (especially), and 4, you will find that traditional IDEs are not very useful without an external terminal configured with a specific configuration. Vscode wins here by integrating a multiple terminals into the "IDE" and allows very simple customization of the debugging tools. In addition, vscode extensions are very useful, namely Live Share provides a google docs like collaboration experience.
 
-VSCode is not your only option to develop code effectively in this class. Learning native linux text editors (like vim) is a very valuable skill that can allow you to pretty much code anytime anywhere, but the learning curve can be intimidating for students used to traditional GUI based IDEs. For projects 2, 3 (especially), and 4, you will find that traditional IDEs are not very useful without an external terminal configured with a specific configuration. Vscode wins here by integrating a multiple terminals into the "IDE" and allows very simple customization of the debugging tools.
 
 <h1>Installation</h1>
 
