@@ -55,6 +55,8 @@ Non-deterministic interrupts are running on a (very fast) timer. This means that
 
 When debugging project 3 **applications/tests**, you may find it helpful to also mask the SIGSEV signal in the launch.json.
 
-<h1>Questions</h1>
+<h1>The End</h1>
 
-This guide was written by Joseph Nwabueze (jnnwa@umich.edu). 
+This guide was written as of WN21 and likely suffers from "it works on my machine" syndrome, so if you run into any trouble or find discrepancy with newer versions of software, please post on piazza.
+
+- Joseph Nwabueze (jnnwa@umich.edu).
