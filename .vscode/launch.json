@@ -5,12 +5,29 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "type": "lldb",
+            "type": "Mac OS LLDB",
             "request": "launch",
             "name": "Debug",
-            "program": "${workspaceFolder}/<your program>",
-            "args": [],
-            "cwd": "${workspaceFolder}"
+            "program": "${workspaceFolder}/scheduler",
+            "args": ["3", "disk.in0", "disk.in1", "disk.in2", "disk.in3", "disk.in4"],
+            "cwd": "${workspaceFolder}",
+            "preRunCommands" : ["process handle -s false -n false -p true SIGUSR1"],
+            "stdio" : [null, null, null]           
+        },
+        {
+            "name": "Linux GDB",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/scheduler",
+            "args": ["3", "disk.in0", "disk.in1", "disk.in2", "disk.in3", "disk.in4", "<input>output"],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "console": "externalTerminal",
+            "MIMode": "gdb",
+            "setupCommands": [
+                {"text":"handle SIGUSR1 nostop noprint"},
+            ]
         }
     ]
 }
