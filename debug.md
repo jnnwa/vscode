@@ -62,5 +62,3 @@ When debugging project 3 **applications/tests**, you may find it helpful to also
 <h1>The End</h1>
 
 This guide was written as of WN21 and likely suffers from "it works on my machine" syndrome, so if you run into any trouble or find discrepancy with newer versions of software, please post on piazza.
-
-- Joseph Nwabueze (jnnwa@umich.edu).
